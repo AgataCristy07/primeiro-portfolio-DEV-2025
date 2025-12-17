@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala:wght@400;700&family=Science+Gothic:wght@100..900&family=Sigmar&display=swap');
+
+:root {
+    --cor-primaria: #332705;
+    --cor-secundaria: #665421;
+    --cor-terciaria: #B1A578;
+    --cor-quartenaria: #DBCC95;
+    --cor--plano-de-fundo: linear-gradient(to bottom left,
+    var(--cor-primaria) 30%,
+    var(--cor-terciaria) 100%,
+    var(--cor-quartenaria) 100%);
+
+    --font-primaria: "Poppins", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh; /*  garante que cobre a tela inteira */
+    box-sizing: border-box;
+    background: var(--cor--plano-de-fundo)
+  
+}
+
+.cabecalho {
+    font-size: 0.75rem;
+    color: var(--cor-quartenaria);
+    padding: 1rem;
+    width: 75%;
+
+}
+
+
+.cabecalho__titulo{
+    color: var(--cor-quartenaria);
+    font-family: var(--font-secundaria);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: right;
+    text-decoration-line: underline; /*sublinhar texto */
+    text-decoration-color: var(--cor-secundaria);  /* cor do sublinhado */
+    text-decoration-style: double;  /* solid | dotted | dashed | double | wavy */
+    text-decoration-thickness: 0.25rem; /* espessura */
+    text-underline-offset: 1rem;  /* distância do texto */
+   
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.cabecalho__menu__link {
+    color: var(--cor-quartenaria);
+    font-family: var(--font-primaria); /*fonte da letra*/
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 0.25rem;
+    text-decoration: none;
+
+}
+.cabecalho__menu__link:hover{
+    background: var(--cor--plano-de-fundo);
+    border: 0.25rem solid var(--cor-primaria);
+    border-radius: 0.5rem;
+}
+
+
+.apresentacao{
+    padding: 5% 10%;
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem; /*espaço entre linhas */
+    align-items: center;
+    font-family: var(--font-primaria); /*fonte da letra*/
+    font-weight: 300;
+}
+
+.apresentacao__conteudo{
+    max-width: 37.5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column; /*direção vertical dos blocos */
+    gap: 3rem; /*espaço entre linhas */
+}
+
+
+.apresentacao__conteudo__texto__principal {
+    text-decoration: none;
+    font-family: var(--font-primaria);
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    line-height: 1.6;
+    border: 0.35rem double var(--cor-quartenaria); 
+    border-radius: 1rem; /*arredondar a borda*/
+    padding: none;
+    text-align: center;
+    /* text-align: justify;  deixa o texto quadrado */
+    text-justify: inter-word;   /* melhora o efeito */
+    color: var(--cor-quartenaria);
+    gap: 1rem;
+    background-color: var(--cor-primaria);
+}
+
+
+.apresentacao__conteudo__texto__linha {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+
+.apresentacao__conteudo__saudacao {
+    color: var(--cor-secundaria); /*letra */
+    display: block;       /* vira uma linha separada */
+    text-align: center;   /* centraliza o conteúdo */
+    margin: 0.5rem 0;       /* opcional: espaçamento */
+    font-weight: 700;    /* mantém seu estilo atual */
+    font-size: 1.5rem;
+
+}
+
+
+.apresentacao__conteudo__nome{
+    color:var(--cor-secundaria); /*letra */
+    font-weight: 700; /*deixar em negrito*/
+}
+
+
+.apresentacao__conteudo__siglas {
+    color: var(--cor-secundaria);
+    line-height: 1.2;
+    font-size: 1.5rem;
+    border: 0.35 double var(--cor-quartenaria); 
+    padding:1rem;
+    margin: 1.75rem;     /*    opcional: espaçamento */
+    font-weight: 700;    /* mantém seu estilo atual */
+    display: inline-block; /*seprar bloco para funcionar junto com justify, e pular linha*/
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*alinhar blocos */
+    justify-content: space-between; /* espaçar entre dois grupos */
+    gap: 1.25rem; /*espaço entre linhas */
+    width: 50%;
+
+}
+
+.apresentacao__links__subtitulo {
+    font-size: 1rem;
+    color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.5rem solid var(--cor-quartenaria); /*cor da borda */
+    color: var(--cor-primaria); /*cor da letra */
+    text-decoration: none; /*limpar estilos padrão do texto link*/
+    max-width: 25rem; /*largura*/
+    width: 100%;
+    text-align: center; /* centralizar texto*/
+    font-size: 1.25rem; /* tamanho da letra */
+    font-weight: 700; /*peso da fonte */
+    padding: 0.75rem 0; /*espaço entre conteudo e borda*/
+    border-radius: 1rem; /* curvatura da borda*/
+    font-family: var(--font-primaria); /*fonte da letra*/
+
+}
+
+.apresentacao__links__navegacao:hover{
+    background-color:var(--cor-secundaria);
+}
+
+.apresentacao__conteudo__imagem{
+    width: 50%;
+    max-width: 37.5rem; 
+    border:0.65rem solid  var(--cor-secundaria);
+    border-radius: 1rem; /*arredondar a borda*/
+}
+.apresentacao__conteudo__imagem:hover{
+    border:1rem solid var(--cor-primaria);
+}
+
+.rodape {
+    background: var(--cor--plano-de-fundo);
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-quartenaria);
+    font-family: var(--font-primaria);
+    padding: 0.25rem;
+    font-weight: 400;
+    width: 100%;
+}
+@media (max-width: 1250px) {
+    .cabecalho {
+        padding: 5%;
+        text-align: center;
+        width: 50%;
+    }
+    
+    .cabecalho__titulo {
+        justify-content: right;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 0.75rem;
+        width: auto;
+        align-items: center;
+        
+    }
+
+    .cabecalho__menu__link {
+        font-size: 0.75rem;
+    }
+
+    .cabecalho__menu__link:hover {
+        padding: 0.25rem;
+       
+
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__conteudo__texto__principal {
+        font-size: 1rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 1rem;
+    }
+
+    .apresentacao__links__navegacao {
+       font-size: 1rem;
+       padding: 1rem;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
+}
