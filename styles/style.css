@@ -48,6 +48,7 @@ body {
     text-align: center;
     border:0.65rem solid  var(--cor-primaria);
     border-radius: 1rem; /*arredondar a borda*/
+    padding: 1rem;
 
    /* text-decoration-line: underline; sublinhar texto */
     /* text-decoration-color: var(--cor-secundaria);  cor do sublinhado */
