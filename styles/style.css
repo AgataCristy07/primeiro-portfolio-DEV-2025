@@ -123,6 +123,21 @@ body {
     background: var(--cor-primaria);
 }
 
+.apresentacao__texto__paragrafo__subpaginas{
+    text-align: justify; /* deixa o texto quadrado */
+    font-family: var(--font-primaria);
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    line-height: 1.6;
+    border: 0.35rem double var(--cor-quartenaria); 
+    border-radius: 1rem; /*arredondar a borda*/
+    padding: 1rem;
+     text-justify: inter-word;   /* melhora o efeito */
+    color: var(--cor-quartenaria);
+    gap: 1rem;
+    background: var(--cor-primaria);
+}
+
 
 .apresentacao__conteudo__texto__linha {
     display: block;
@@ -258,6 +273,10 @@ body {
         font-size: 1rem;
     }
 
+    .apresentacao__texto__paragrafo__subpaginas{
+        font-size: 1rem;
+    }
+
 
     .apresentacao__links__subtitulo {
         font-size: 1rem;
@@ -308,6 +327,11 @@ body {
         padding: 1rem;
     }
 
+    .apresentacao__texto__paragrafo__subpaginas {
+        font-size: 0.95rem;
+        padding: 1rem;
+    }
+
     .apresentacao__conteudo__imagem {
         width: 100%;
         max-width: 20rem;
@@ -347,6 +371,10 @@ body {
     }
 
     .apresentacao__conteudo__texto__principal {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+    .apresentacao__texto__paragrafo__subpaginas{
         font-size: 0.75rem;
         padding: 0.5rem;
     }
