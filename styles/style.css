@@ -40,7 +40,7 @@ body {
 }
 
 .cabecalho__titulo{
-    background-color: var(--cor--plano-de-fundo);
+    background: var(--cor--plano-de-fundo);
     color: var(--cor-quartenaria);
     font-family: var(--font-secundaria);
     font-size: 2rem;
@@ -113,13 +113,13 @@ body {
     line-height: 1.6;
     border: 0.35rem double var(--cor-quartenaria); 
     border-radius: 1rem; /*arredondar a borda*/
-    padding: none;
+    padding: 0;
     text-align: center;
     /* text-align: justify;  deixa o texto quadrado */
     text-justify: inter-word;   /* melhora o efeito */
     color: var(--cor-quartenaria);
     gap: 1rem;
-    background-color: var(--cor-primaria);
+    background: var(--cor-primaria);
 }
 
 
@@ -194,7 +194,7 @@ body {
 }
 
 .apresentacao__links__navegacao:hover{
-    background-color:var(--cor-secundaria);
+    background:var(--cor-secundaria);
 }
 
 .apresentacao__conteudo__imagem{
