@@ -29,7 +29,7 @@ body {
 
 .cabecalho {
     padding: 5% 10%;
-    max-width: 70rem;
+    max-width: 90rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -40,16 +40,20 @@ body {
 }
 
 .cabecalho__titulo{
+    background-color: var(--cor--plano-de-fundo);
     color: var(--cor-quartenaria);
     font-family: var(--font-secundaria);
     font-size: 2rem;
     font-weight: 400;
-    text-align: right;
-    text-decoration-line: underline; /*sublinhar texto */
-    text-decoration-color: var(--cor-secundaria);  /* cor do sublinhado */
-    text-decoration-style: double;  /* solid | dotted | dashed | double | wavy */
-    text-decoration-thickness: 0.25rem; /* espessura */
-    text-underline-offset: 1rem;  /* distância do texto */
+    text-align: center;
+    border:0.65rem solid  var(--cor-primaria);
+    border-radius: 1rem; /*arredondar a borda*/
+
+   /* text-decoration-line: underline; sublinhar texto */
+    /* text-decoration-color: var(--cor-secundaria);  cor do sublinhado */
+    /* text-decoration-style: double;  solid | dotted | dashed | double | wavy */
+    /* text-decoration-thickness: 0.25rem; espessura */
+    /*text-underline-offset: 1rem;   distância do texto */
    
 }
 
@@ -67,18 +71,20 @@ body {
     font-weight: 300;
     padding: 0.25rem 0.5rem;
     text-decoration: none;
-
-}
-.cabecalho__menu__link:hover{
     background: var(--cor--plano-de-fundo);
     border: 0.25rem solid var(--cor-primaria);
     border-radius: 0.5rem;
+
+}
+.cabecalho__menu__link:hover{
+    background: var(--cor-terciaria);
+
 }
 
 
 .apresentacao{
     padding: 5% 10%;
-    max-width: 70rem;
+    max-width: 90rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -194,11 +200,8 @@ body {
 .apresentacao__conteudo__imagem{
     width: 50%;
     max-width: 37.5rem; 
-    border:0.65rem solid  var(--cor-secundaria);
+    border:0.65rem solid  var(--cor-primaria);
     border-radius: 1rem; /*arredondar a borda*/
-}
-.apresentacao__conteudo__imagem:hover{
-    border:1rem solid var(--cor-primaria);
 }
 
 .rodape {
@@ -274,7 +277,7 @@ body {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 
     .cabecalho {
         padding: 1.5rem 1rem;
@@ -343,7 +346,7 @@ body {
     }
 
     .apresentacao__conteudo__texto__principal {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         padding: 0.5rem;
     }
 
